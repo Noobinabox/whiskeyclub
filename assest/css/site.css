@@ -141,8 +141,12 @@ body {
 
 @media(max-width: 550px) {
 	.top-header {
-		height: 40vh;
+		height: 50vh;
 		
+	}
+	
+	.header h1 {
+		padding-top: 100px;
 	}
 	
 	body {
