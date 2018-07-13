@@ -4,21 +4,21 @@ html {
 }
 
 body {
-	margin-bottom: 100px;
+	margin-bottom: 130px;
 }
 
 .footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: 130px;
 	background-color: #222222;
-	border-top: 2px solid #b27d6d;
+	border-top: 3px solid #b27d6d;
 	color: #bf8f60;
 }
 
 .footer p {
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 .float-right {
@@ -29,11 +29,14 @@ body {
 	display: none;
 }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand {
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
 	color: #bf8f60;
+	transition: 300ms;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
 	color: #f7f3ee;
 }
 
@@ -43,13 +46,30 @@ body {
 }
 
 .top-header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('https://d256619kyxncpv.cloudfront.net/gui/site/img/landing/speakeasy/v2/cover_desktop2.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), /*url('https://d256619kyxncpv.cloudfront.net/gui/site/img/landing/speakeasy/v2/cover_desktop2.jpg');*/
+	url('/assest/css/imgs/whisky_case.jpg');
 	color: #bf8f60;
 	background-size: cover;
 	background-position: center;
 	height: 50vh;
 	top: 50%;
 	left: 50%;
+}
+
+.fees {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+		url('/assest/css/imgs/whiskey_bar_alcohol_glass_scotch_drink_bourbon_nightclub-1341551.jpg');
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.fees h1 {
+	padding-top: 20vh;
+}
+
+.fees-p {
+	color: #f7f3ee;
 }
 
 .header h1 {
@@ -67,8 +87,6 @@ body {
 	margin: 0 auto;
 }
 
-
-
 .navbar {
 	background-color: #222222;
 	color: #bf8f60;
@@ -83,6 +101,10 @@ body {
 	padding: 50px 0;
 }
 
+.statement h1 {
+	padding: 20px 0px;
+}
+
 .bg-dots {
 	background: url(https://d256619kyxncpv.cloudfront.net/gui/site/img/backgrounds/dots.png) #F7F3EE;
 	background-size: auto auto;
@@ -92,7 +114,7 @@ body {
 .brothers-lg {
 	font-family: 'Old Standard TT', serif;
 	font-size: 72px;
-	line-height: 62px !important;
+	line-height: 68px !important;
 	color: #C29C78;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -131,8 +153,28 @@ body {
 	padding: 50px 0;
 }
 
+.mailing h1 {
+	padding: 20px 0px;
+}
+
+.footer-logo {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	z-index: 1;
+	border: 3px solid #b27d6d;
+	position: absolute;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -45px;
+}
+
 .tasting {
 	padding: 50px 0;
+}
+
+.tasting h1 {
+	padding: 20px 0;
 }
 
 .card {
@@ -142,29 +184,28 @@ body {
 @media(max-width: 550px) {
 	.top-header {
 		height: 50vh;
-		
 	}
-	
 	.header h1 {
 		padding-top: 100px;
 	}
-	
+	.fees {
+		padding-left: 0px;
+	}
+	.fees h1 {
+		padding-top: 12vh;
+	}
 	body {
-		margin-bottom: 140px;
+		margin-bottom: 160px;
 	}
-	
 	.footer {
-		height: 140px;
+		height: 160px;
 	}
-	
 	.brand-title-lg {
 		display: none;
 	}
-	
 	.brand-title-sm {
 		display: inline;
 	}
-	
 	.brothers-lg {
 		font-size: 42px;
 		line-height: 42px !important;
