@@ -47,7 +47,7 @@ body {
 
 .top-header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), /*url('https://d256619kyxncpv.cloudfront.net/gui/site/img/landing/speakeasy/v2/cover_desktop2.jpg');*/
-	url('/assest/css/imgs/whisky_case.jpg');
+	url('imgs/whisky_case.jpg');
 	color: #bf8f60;
 	background-size: cover;
 	background-position: center;
@@ -58,7 +58,7 @@ body {
 
 .fees {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-		url('/assest/css/imgs/whiskey_bar_alcohol_glass_scotch_drink_bourbon_nightclub-1341551.jpg');
+		url('imgs/whiskey_bar_alcohol_glass_scotch_drink_bourbon_nightclub-1341551.jpg');
 	height: 50vh;
 	background-size: cover;
 	background-position: center;
