@@ -80,7 +80,7 @@ body {
 
 .header h1::after {
 	content: '';
-	height: 1px;
+	height: 3px;
 	display: block;
 	width: 60%;
 	background: #b27d6d;
@@ -97,11 +97,11 @@ body {
 	background-color: #f7f3ee;
 }
 
-.statement {
+.members {
 	padding: 50px 0;
 }
 
-.statement h1 {
+.members h1 {
 	padding: 20px 0px;
 }
 
@@ -149,11 +149,19 @@ body {
 	color: #bf8f60;
 }
 
-.mailing {
+.history {
 	padding: 50px 0;
 }
 
-.mailing h1 {
+.reviews {
+	padding: 50px 0;
+}
+
+.reviews h1 {
+	padding: 20px 0;
+}
+
+.history h1 {
 	padding: 20px 0px;
 }
 
@@ -179,6 +187,87 @@ body {
 
 .card {
 	margin-bottom: 10px;
+}
+
+.card-profile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	background-color: #000;
+	transition: 500ms;
+}
+
+.card-profile:hover {
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-profile h1 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 1px;
+}
+
+.card-profile .title {
+	color: #000;
+	font-size: 18px;
+	font-family: 'Old Standard TT', serif;
+	font-weight: 600;
+}
+
+.card-profile button {
+	font-family: 'Old Standard TT', serif;
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: #bf8f60;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: #222222;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card-profile img {
+	width: 100%;
+	max-height: 225px;
+}
+
+.card-profile-info {
+	background-color: #fff;
+}
+
+.card-profile a{
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+.card-profile button:hover, .card-profile a:hover {
+	opacity: 0.95;
+}
+
+.reviews .card {
+	font-family: 'Old Standard TT', serif;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reviews .card-title {
+	font-weight: 600;
+	font-size: 28px;
+}
+
+.reviews .card-subtitle {
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.reviews .card-text {
+	font-weight: 600;
 }
 
 @media(max-width: 550px) {
