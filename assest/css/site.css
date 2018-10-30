@@ -5,6 +5,9 @@ html {
 
 body {
 	margin-bottom: 130px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	border: 0px;
 }
 
 .footer {
@@ -49,19 +52,26 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), /*url('https://d256619kyxncpv.cloudfront.net/gui/site/img/landing/speakeasy/v2/cover_desktop2.jpg');*/
 	url('imgs/whisky_case.jpg');
 	color: #bf8f60;
-	background-size: cover;
+	/*background-attachment: fixed; */
 	background-position: center;
+/*	background-repeat: no-repeat; */
+	background-size: cover;
 	height: 50vh;
 	top: 50%;
 	left: 50%;
+	border-bottom: 3px solid #b27d6d;
 }
+
+
 
 .fees {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
 		url('imgs/whiskey_bar_alcohol_glass_scotch_drink_bourbon_nightclub-1341551.jpg');
 	height: 50vh;
-	background-size: cover;
+	background-attachment: fixed;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .fees h1 {
@@ -187,6 +197,7 @@ body {
 
 .card {
 	margin-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .card-profile {
@@ -206,14 +217,14 @@ body {
 	font-family: 'Old Standard TT', serif;
 	font-size: 24px;
 	font-weight: 700;
-	padding-bottom: 1px;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .card-profile .title {
 	color: #000;
-	font-size: 18px;
-	font-family: 'Old Standard TT', serif;
-	font-weight: 600;
+	font-size: 1.2em;
+	padding-bottom: 15px;
 }
 
 .card-profile button {
@@ -233,8 +244,12 @@ body {
 }
 
 .card-profile img {
-	width: 100%;
-	max-height: 225px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	z-index: 1;
+	border: 3px solid #b27d6d;
+	left: 50px;
 }
 
 .card-profile-info {
@@ -267,6 +282,88 @@ body {
 }
 
 .reviews .card-text {
+	font-weight: 600;
+}
+
+.associate_logo {
+	display: block;
+	margin: auto;
+	width: inherit;
+	padding: 20px 40px;
+}
+
+.buz_logos {
+	padding: 50px 0;
+}
+
+.subscribe {
+	background-color: #222222;
+	color: #bf8f60;
+	padding: 10px;
+
+}
+
+.subscribe button {
+	margin: 10px 0;
+}
+
+.subscribe p {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+
+/*** Top Drinks Styles ***/
+.topdrinks {
+	padding: 60px 0;
+}
+
+.topdrinks-header {
+	padding-bottom: 10px;
+}
+
+.checked {
+	color: orange;
+}
+
+.drink_card {
+	padding: 10px 20px;
+}
+
+.drink_review_card {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topdrinks .drink_image {
+	margin-top: 20px;
+}
+
+.topdrinks .drink_image .bottle_preview {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+}
+
+.drink_text {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.drink_text h3 {
+	font-weight: 600;
+}
+
+.topdrinks p {
+	padding: 10px 20px 10px 0px;
+}
+
+.topdrinks button {
+	margin: 10px;
+	float: right;
+	font-size: 14px;
 	font-weight: 600;
 }
 
