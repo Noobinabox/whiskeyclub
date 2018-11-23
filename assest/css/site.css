@@ -10,18 +10,33 @@ body {
 	border: 0px;
 }
 
+
 .footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 180px;
-	background-color: #222222;
-	border-top: 3px solid #b27d6d;
+	height: auto;
+	background-color: #111;
+	background-image: url(https://d256619kyxncpv.cloudfront.net/gui/assets/img/dark_pattern_bg.png);
+	background-size: 10px 10px;
+	margin-top: 60px;
+	/*border-top: 3px solid #b27d6d;*/
 	color: #bf8f60;
 }
 
+
+.footer-banner {
+	background-color: #111;
+	margin-top: 20px;
+	border-top: 3px solid #b27d6d;
+}
+
 .footer p {
-	padding-top: 60px;
+	padding-top: 20px;
+}
+
+.footer .subscribe h1 {
+	margin-top: 60px;
 }
 
 .float-right {
@@ -95,6 +110,26 @@ body {
 	width: 60%;
 	background: #b27d6d;
 	margin: 0 auto;
+}
+
+.topdrinks h1::after, .members h1.brothers-md:first-child::after {
+	content: '';
+	height: 2px;
+	display: block;
+	width: 15%;
+	background: #b27d6d;
+	margin: 0 auto;
+	margin-top: 7px;
+}
+
+.history h1::after, .reviews h1::after, .tasting h1::after {
+	content: '';
+	height: 2px;
+	display: block;
+	width: 15%;
+	background: black;
+	margin: 0 auto;
+	margin-top: 7px;
 }
 
 .navbar {
@@ -188,7 +223,7 @@ body {
 }
 
 .tasting {
-	padding: 50px 0;
+	padding: 50px 0 450px 0;
 }
 
 .tasting h1 {
@@ -360,6 +395,14 @@ body {
 	margin-bottom: 20px;
 }
 
+.subscribe {
+	padding-top: 0px;
+}
+
+.color-white {
+	color: white;
+}
+
 @media(max-width: 850px) {
 	.top-header {
 		height: 70vh;
@@ -395,7 +438,7 @@ body {
 		margin-bottom: 160px;
 	}
 	.footer {
-		height: 160px;
+		height: auto;
 	}
 	.brand-title-lg {
 		display: none;
@@ -406,5 +449,8 @@ body {
 	.brothers-lg {
 		font-size: 42px;
 		line-height: 42px !important;
+	}
+	.topdrinks h1::after, .members h1.brothers-md::after, .history h1::after, .reviews h1::after, .tasting h1::after {
+		width: 70%;
 	}
 }
