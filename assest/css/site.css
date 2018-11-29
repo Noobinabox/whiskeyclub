@@ -195,6 +195,10 @@ body {
 	margin-right: 10px;
 }
 
+.latest-reviews {
+	padding-top: 20px;
+}
+
 .color-black {
 	color: #000;
 }
@@ -217,6 +221,10 @@ body {
 
 .history h1 {
 	padding: 20px 0px;
+}
+
+.col-lg-6 article.row.post header.col-lg-8.offset-lg-4 h3 {
+	padding-right: 50px;
 }
 
 .footer-logo {
@@ -445,11 +453,14 @@ body {
 	border-radius: 4px;
 }
 
-.post header,
 .post .post-excerpt,
 .post .post-body,
 #comments .comments-wrap{
 	padding: 20px;
+}
+
+.post header {
+	padding: 20px 20px 0 20px;
 }
 
 .post header h3,
@@ -587,6 +598,21 @@ label {
 }
 
 /* POST STYLE */
+
+.post-container {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.post-container header h3 {
+	padding-right: 50px;
+	font-size: 38px;
+}
+
+.col-lg-12.post-body {
+	padding: 20px 40px;
+}
+
 #comments h3 {
 	text-align: center;
 }
@@ -684,7 +710,7 @@ label {
 	padding: 0 20px 20px 20px;
 }
 
-.review-container .post-image img {
+.post-image img {
 	width: auto;
 	display: block;
 	padding: 0;
@@ -743,5 +769,9 @@ label {
 	}
 	.topdrinks h1::after, .members h1.brothers-md::after, .history h1::after, .reviews h1::after, .tasting h1::after {
 		width: 70%;
+	}
+
+	.post-image img {
+		height: 300px;
 	}
 }
